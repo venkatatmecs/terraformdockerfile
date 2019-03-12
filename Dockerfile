@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN apt-get update
 RUN apt-get upgrade
-RUN apt-get install -y unzip
+RUN apt-get install -y zip
 RUN apt-get install -y wget
 
 RUN wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
