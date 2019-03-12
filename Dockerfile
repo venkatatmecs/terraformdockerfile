@@ -1,14 +1,15 @@
 FROM ubuntu
 RUN apt-get update
 RUN apt-get upgrade
-RUN apt-get install -y zip
-RUN apt-get install -y wget
+RUN apt-get install -y ansible
+#RUN apt-get install -y zip
+#RUN apt-get install -y wget
 
-RUN wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
+#RUN wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
 #ENTRYPOINT ["wget", "-O", "-"]
 #ADD https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip / 
 
-RUN unzip /terraform_0.11.11_linux_amd64.zip
-RUN mv terraform /usr/local/bin/
+#RUN unzip /terraform_0.11.11_linux_amd64.zip
+#RUN mv terraform /usr/local/bin/
 RUN apt-get install -y vim
 
