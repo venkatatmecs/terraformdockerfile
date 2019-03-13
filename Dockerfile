@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alphine:latest
 RUN apt-get update
 RUN apt-get upgrade
 RUN echo "hello venkat"
