@@ -1,7 +1,8 @@
 FROM ubuntu:latest
 RUN apt-get update
 RUN apt-get upgrade
-RUN apt-get install -y ansible
+RUN echo "hello venkat"
+#RUN apt-get install -y ansible
 #RUN apt-get install -y zip
 #RUN apt-get install -y wget
 
@@ -11,5 +12,5 @@ RUN apt-get install -y ansible
 
 #RUN unzip /terraform_0.11.11_linux_amd64.zip
 #RUN mv terraform /usr/local/bin/
-RUN apt-get install -y vim
+#RUN apt-get install -y vim
 
